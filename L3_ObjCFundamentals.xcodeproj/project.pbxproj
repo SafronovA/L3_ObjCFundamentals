@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		8E20102D26430A7600ADEA64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E20102C26430A7600ADEA64 /* main.m */; };
+		8E20103E26430AEA00ADEA64 /* RSPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E20103D26430AEA00ADEA64 /* RSPerson.m */; };
+		8E201044264488A300ADEA64 /* RSPassenger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E201043264488A300ADEA64 /* RSPassenger.m */; };
+		8E20104F26448A3F00ADEA64 /* RSVehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E20104E26448A3F00ADEA64 /* RSVehicle.m */; };
+		8E20105626448D3A00ADEA64 /* RSCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E20105526448D3A00ADEA64 /* RSCar.m */; };
+		8E20105C26448E0D00ADEA64 /* RSCarPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E20105B26448E0D00ADEA64 /* RSCarPort.m */; };
+		8EB97177264DAD4100E7C30A /* RSPassenger+PassengerCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB97176264DAD4100E7C30A /* RSPassenger+PassengerCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,19 @@
 /* Begin PBXFileReference section */
 		8E20102926430A7600ADEA64 /* L3_ObjCFundamentals */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = L3_ObjCFundamentals; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E20102C26430A7600ADEA64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E20103C26430AEA00ADEA64 /* RSPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSPerson.h; sourceTree = "<group>"; };
+		8E20103D26430AEA00ADEA64 /* RSPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSPerson.m; sourceTree = "<group>"; };
+		8E201042264488A300ADEA64 /* RSPassenger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSPassenger.h; sourceTree = "<group>"; };
+		8E201043264488A300ADEA64 /* RSPassenger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSPassenger.m; sourceTree = "<group>"; };
+		8E20104D26448A3F00ADEA64 /* RSVehicle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSVehicle.h; sourceTree = "<group>"; };
+		8E20104E26448A3F00ADEA64 /* RSVehicle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSVehicle.m; sourceTree = "<group>"; };
+		8E20105426448D3A00ADEA64 /* RSCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSCar.h; sourceTree = "<group>"; };
+		8E20105526448D3A00ADEA64 /* RSCar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSCar.m; sourceTree = "<group>"; };
+		8E20105A26448E0D00ADEA64 /* RSCarPort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSCarPort.h; sourceTree = "<group>"; };
+		8E20105B26448E0D00ADEA64 /* RSCarPort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSCarPort.m; sourceTree = "<group>"; };
+		8E20105F2645B4BD00ADEA64 /* RSEnterable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSEnterable.h; sourceTree = "<group>"; };
+		8EB97175264DAD4100E7C30A /* RSPassenger+PassengerCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSPassenger+PassengerCategory.h"; sourceTree = "<group>"; };
+		8EB97176264DAD4100E7C30A /* RSPassenger+PassengerCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RSPassenger+PassengerCategory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +76,78 @@
 		8E20102B26430A7600ADEA64 /* L3_ObjCFundamentals */ = {
 			isa = PBXGroup;
 			children = (
+				8E2010402644888300ADEA64 /* Model */,
 				8E20102C26430A7600ADEA64 /* main.m */,
+				8E20103C26430AEA00ADEA64 /* RSPerson.h */,
+				8E20103D26430AEA00ADEA64 /* RSPerson.m */,
 			);
 			path = L3_ObjCFundamentals;
+			sourceTree = "<group>";
+		};
+		8E2010402644888300ADEA64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E20105826448DE800ADEA64 /* Port */,
+				8E20105226448D1300ADEA64 /* Car */,
+				8E20104C26448A2700ADEA64 /* Vehicle */,
+				8E2010412644888B00ADEA64 /* Passenger */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E2010412644888B00ADEA64 /* Passenger */ = {
+			isa = PBXGroup;
+			children = (
+				8EB97174264DACE200E7C30A /* Category */,
+				8E201042264488A300ADEA64 /* RSPassenger.h */,
+				8E201043264488A300ADEA64 /* RSPassenger.m */,
+			);
+			path = Passenger;
+			sourceTree = "<group>";
+		};
+		8E20104C26448A2700ADEA64 /* Vehicle */ = {
+			isa = PBXGroup;
+			children = (
+				8E20104D26448A3F00ADEA64 /* RSVehicle.h */,
+				8E20104E26448A3F00ADEA64 /* RSVehicle.m */,
+			);
+			path = Vehicle;
+			sourceTree = "<group>";
+		};
+		8E20105226448D1300ADEA64 /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				8E20105426448D3A00ADEA64 /* RSCar.h */,
+				8E20105526448D3A00ADEA64 /* RSCar.m */,
+			);
+			path = Car;
+			sourceTree = "<group>";
+		};
+		8E20105826448DE800ADEA64 /* Port */ = {
+			isa = PBXGroup;
+			children = (
+				8E20105926448DEE00ADEA64 /* CarPort */,
+			);
+			path = Port;
+			sourceTree = "<group>";
+		};
+		8E20105926448DEE00ADEA64 /* CarPort */ = {
+			isa = PBXGroup;
+			children = (
+				8E20105A26448E0D00ADEA64 /* RSCarPort.h */,
+				8E20105B26448E0D00ADEA64 /* RSCarPort.m */,
+				8E20105F2645B4BD00ADEA64 /* RSEnterable.h */,
+			);
+			path = CarPort;
+			sourceTree = "<group>";
+		};
+		8EB97174264DACE200E7C30A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				8EB97175264DAD4100E7C30A /* RSPassenger+PassengerCategory.h */,
+				8EB97176264DAD4100E7C30A /* RSPassenger+PassengerCategory.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +206,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E20105C26448E0D00ADEA64 /* RSCarPort.m in Sources */,
+				8E201044264488A300ADEA64 /* RSPassenger.m in Sources */,
+				8E20105626448D3A00ADEA64 /* RSCar.m in Sources */,
+				8EB97177264DAD4100E7C30A /* RSPassenger+PassengerCategory.m in Sources */,
 				8E20102D26430A7600ADEA64 /* main.m in Sources */,
+				8E20103E26430AEA00ADEA64 /* RSPerson.m in Sources */,
+				8E20104F26448A3F00ADEA64 /* RSVehicle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
